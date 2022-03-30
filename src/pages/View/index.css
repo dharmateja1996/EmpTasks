@@ -1,0 +1,25 @@
+.view-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #c1dbd7;
+    width: 85%;
+    height: 80vh;
+    border-radius: 30px;
+  
+   
+}
+.employee-container{
+    text-decoration: none;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}

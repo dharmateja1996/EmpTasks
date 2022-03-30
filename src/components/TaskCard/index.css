@@ -1,0 +1,68 @@
+.task-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid gainsboro;
+
+
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 80%;
+
+    -webkit-box-shadow: -3px 6px 12px 0px rgba(190, 182, 237, 1);
+    -moz-box-shadow: -3px 6px 12px 0px rgba(190, 182, 237, 1);
+    box-shadow: -3px 6px 12px 0px rgba(190, 182, 237, 1);
+
+
+}
+
+.color-red {
+    border-left: 5px solid red;
+}
+
+.color-green {
+    border-left: 5px solid green;
+}
+
+.color-blue {
+    border-left: 5px solid blue;
+}
+
+.color-pink {
+    border-left: 5px solid pink;
+}
+
+.color-gray {
+    border-left: 5px solid gray;
+}
+
+.color-black {
+    border-left: 5px solid #000000;
+}
+
+.color-radomone {
+    border-left: 5px solid #3d30f0;
+}
+
+.color-radomtwo {
+    border-left: 5px solid #40c6de;
+}
+
+.color-radomthree {
+    border-left: 5px solid #40de8a;
+}
+
+.color-radomfour {
+    border-left: 5px solid #9ade40;
+}
+
+.color-radomfive {
+    border-left: 5px solid #dbde40;
+}
+.color-radomfive{
+    border-left: 5px solid yellow;
+}   
