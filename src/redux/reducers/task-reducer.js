@@ -14,10 +14,11 @@ import {
   Employee_Name_Input,
   Employee_Id_Input,
   Create_Employee_Tasks,
-  ADD_EMPLOYEE_TASKS
+  ADD_EMPLOYEE_TASKS,SETACTIVEID, SETEMPDATA
 } from "../actions/taskActionTypes";
 
 const initialState = {
+  activeId: null,
   isEmployee: "true",
   employeeId: "",
   employeeName: "",
@@ -108,6 +109,17 @@ const reducer = (state = initialState, { type, payload }) => {
         ...state,
         isEmployee: payload,
       };
+    case SETACTIVEID:
+      return {
+        ...state,
+        activeId: payload
+      }
+      case SETEMPDATA:
+        return {
+          ...state,
+          empData:[...payload]
+         
+        }  
 
     default:
       return state;

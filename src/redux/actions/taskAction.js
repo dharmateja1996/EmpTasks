@@ -7,6 +7,8 @@ import {
   REMOVE_TASK,
   ISEMPLOYEEOBJECT,
   ADD_EMPLOYEE_TASKS,
+  SETACTIVEID,
+  SETEMPDATA,
 } from "./taskActionTypes";
 
 export function createEmployeeTasks(payload) {
@@ -85,3 +87,19 @@ export const addEmployeeTasks = (payload) => {
     payload: payload,
   };
 };
+
+export const setActiveId = (payload) => {
+  return {
+    type: SETACTIVEID,
+    payload: payload,
+  };
+}
+ 
+
+export const setEmpData = (payload) => {
+  console.log(payload,"======================")
+  return {
+    type: SETEMPDATA,
+    payload: payload,
+  };
+}

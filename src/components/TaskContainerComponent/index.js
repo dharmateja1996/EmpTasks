@@ -9,6 +9,8 @@ import {
 import { MdAddCircle } from "react-icons/md";
 import { AiFillMinusSquare } from "react-icons/ai";
 
+import { v4 as uuidv4 } from "uuid";
+
 import "./index.css";
 const TaskContainerComponent = () => {
   const globalState = useSelector((state) => state.reducer);
@@ -27,7 +29,11 @@ const TaskContainerComponent = () => {
 
   const addTask = () => {
     // setState([...state, ]);
-    dispatch(addTaskObject({ task: "" }));
+    const newTask = {
+      id: uuidv4(),
+      task: "",
+    };
+    dispatch(addTaskObject(newTask));
   };
 
   const removeTask = (i) => {
@@ -65,7 +71,7 @@ const TaskContainerComponent = () => {
                 className="remove-button"
                 onClick={() => removeTask(index)}
               >
-                <AiFillMinusSquare/>
+                <AiFillMinusSquare />
               </button>
             ) : null}
           </div>
